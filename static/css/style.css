@@ -45,6 +45,7 @@ h2 code {
 
 .w-100 {
     margin: auto;
+    min-width: 1px;
 }
 
 .main_color  {
