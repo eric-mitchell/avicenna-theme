@@ -2,7 +2,7 @@
 A minimal academic page for academics!
 
 **FOR THE DEMO, PLEASE SEE THE LINK BELOW**
-[![Screenshot](https://github.com/hadisinaee/avicenna/blob/master/images/youtube.png "Avicenna")](https://youtu.be/rw29ZJJGFIM)
+[![Screenshot](https://github.com/eric-mitchell/avicenna/blob/master/images/youtube.png "Avicenna")](https://youtu.be/rw29ZJJGFIM)
 
 # Features
 * Minimal, Responsive, and Clean
@@ -29,7 +29,7 @@ There are 2 ways to install `Avicenna`:
 In this approach, all you need is to replace the `my_cool_page` with your desired name in the following script:
 
 ```bash
-wget https://raw.githubusercontent.com/hadisinaee/avicenna/master/setup_avicenna.sh && sh setup_avicenna.sh my_cool_page
+wget https://raw.githubusercontent.com/eric-mitchell/avicenna/master/setup_avicenna.sh && sh setup_avicenna.sh my_cool_page
 ```
 
 Run the site:
@@ -55,7 +55,7 @@ cd my_cool_page
 
 3. Add the stable release of `Avicenna` (the `master` branch) to your `themes` folder:
 ```bash
-git clone -b master git@github.com:hadisinaee/avicenna.git ./themes/avicenna
+git clone -b master git@github.com:eric-mitchell/avicenna.git ./themes/avicenna
 ```
 
 4. Copy the sample site to your project:
@@ -79,7 +79,7 @@ You can start the customization with the `config.toml` file. It's located a the 
 ## Adding Your Profile Picture, CV, and Favicon
 There is a folder named `static` under the root of your site's folder. Its structure is as follows:
 
-![static_folder](https://github.com/hadisinaee/avicenna/blob/master/static_folder.png)
+![static_folder](https://github.com/eric-mitchell/avicenna/blob/master/static_folder.png)
 
 - **Profile Picture**: Simply replace `profile.png` with your profile file. Please use the same name and extenstion, e.g. `profile.png`. It doesn't work if you use another *name* or *extension*.
 - **CV**: You need to put your CV directly under `static` folder. I recommend you to use the name `cv.pdf` for your CV file. Also, if you wanted to use another file name, you would need to change it in your introduction. See Introduction Section.
@@ -88,7 +88,7 @@ There is a folder named `static` under the root of your site's folder. Its struc
 ## Content
 All files and folders that you need to modify lies in the `content` folder. The folder should look like this
 
-![the content folder structure](https://github.com/hadisinaee/avicenna/blob/master/avicenna_folder.png)
+![the content folder structure](https://github.com/eric-mitchell/avicenna/blob/master/avicenna_folder.png)
 
 Avicenna theme has three different sections: `Introduction`, `Publications`, and `Projects`. Based on the previous figure, you might have an intuition where you should modify. However, there are some details that I have to provide.
 

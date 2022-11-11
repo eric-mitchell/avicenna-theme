@@ -6,7 +6,7 @@ hugo new site $SITE_FOLDER
 
 # install the latest avicenna theme
 cd $SITE_FOLDER
-git clone -b master git@github.com:hadisinaee/avicenna.git ./themes/avicenna
+git clone -b master git@github.com:eric-mitchell/avicenna.git ./themes/avicenna
 
 # copy the template site
 cp -R themes/avicenna/exampleSite/* ./
