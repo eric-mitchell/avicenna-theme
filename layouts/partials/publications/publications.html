@@ -10,21 +10,12 @@
         <div class="publication row  w-100">
 
             <div class="section-1 w-100">
-                <span>
-                    {{$page.Params.title}},
+                <span class="publication-title">
+                    {{$page.Params.title}}
                 </span>
-
-                <span class="text-muted publication-date">
-                    {{substr ($page.Params.date.Format "2006-01-02") 0 4}},
-                </span>
-
-                <span class="text-muted publication-name">
-                    {{$page.Params.publication}}
-                </span>
-
             </div>
 
-            <div class="section-2 text-muted w-100">
+            <div class="section-2 w-100">
 
                 {{ $authors := $page.Params.authors }}
 
@@ -41,6 +32,15 @@
                 {{end}}
                 {{end}}
 
+                <br>
+                <span class="text-muted publication-name">
+                    {{$page.Params.publication}},
+                </span>
+
+                <span class="text-muted publication-date">
+                    {{substr ($page.Params.date.Format "2006-01-02") 0 4}}
+                </span>
+
             </div>
 
             {{ $links := $page.Params.links }}
@@ -48,9 +48,7 @@
             <div class="section-3  w-100">
                 {{range $link_name, $link_url := $links}}
                     {{ if $link_url }}
-                <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                    {{$link_name}}
-                </a>
+                    <a class="main_color rounded" href="{{$link_url}}" target="_blank">{{$link_name}}</a>
                     {{end}}
                 {{end}}
             </div>

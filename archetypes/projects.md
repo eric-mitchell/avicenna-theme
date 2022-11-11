@@ -10,6 +10,6 @@ date: "2019-03-30"
 # format is, LINK_NAME : LINK_URL
 links:
     website: 'https://example.com/'
-    code: 'https://github.com/'
+    repo: 'https://github.com/'
 ---
 
