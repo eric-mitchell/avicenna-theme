@@ -32,7 +32,7 @@ In this approach, all you need is to replace the `my_cool_page` with your desire
 wget https://raw.githubusercontent.com/eric-mitchell/avicenna/master/setup_avicenna.sh && sh setup_avicenna.sh my_cool_page
 ```
 
-Run the site:
+Run the website:
 ```bash
 hugo serve
 ```
@@ -63,7 +63,7 @@ git clone -b master git@github.com:eric-mitchell/avicenna.git ./themes/avicenna
 cp -R themes/avicenna/exampleSite/* ./
 ```
 
-5. Run the site:
+5. Run the website:
 ```bash
 hugo serve
 ```

@@ -9,7 +9,7 @@ date: "2019-03-30"
 # You can have multiple links
 # format is, LINK_NAME : LINK_URL
 links:
-    website: 'https://example.com/'
+    webwebsite: 'https://example.com/'
     repo: 'https://github.com/'
 ---
 

@@ -5,42 +5,36 @@
 
 {{if gt (len $rscPages) 0}}
 <div class="publications row w-100">
-    <div class="col w-100">
         {{ range $page := $rscPages}}
-        <div class="publication row  w-100">
-
+        <div class="col-6 publication">
             <div class="section-1 w-100">
                 <span class="publication-title">
                     {{$page.Params.title}}
                 </span>
             </div>
-
             <div class="section-2 w-100">
-
                 {{ $authors := $page.Params.authors }}
-
                 {{ if $authors }}
                 {{range $i, $author := $authors}}
-                <span>
-                    {{$author}}
+                <span class="text-muted">
+                    {{ if and (hasPrefix $author "Eric") (or (strings.HasSuffix $author "Mitchell") (strings.HasSuffix $author "Mitchell*")) }}
+                        <span style="font-weight: 700;">{{$author}}</span><!--
+                    -->{{ else }}
+                    {{$author}}<!--
+                    -->{{ end }}{{ if lt $i (sub (len $authors) 1)}},{{end}}
                 </span>
-                {{ if lt $i (sub (len $authors) 1)}}
-                <span class="separator">
-                    ,
-                </span>
+                {{ if (modBool (add $i 1) 3) }} <br>{{ end }}
                 {{end}}
                 {{end}}
-                {{end}}
-
+                {{ if (not (modBool (len $authors) 3)) }}
                 <br>
-                <span class="text-muted publication-name">
+                {{end}}
+                <span class="publication-venue">
                     {{$page.Params.publication}},
                 </span>
-
-                <span class="text-muted publication-date">
+                <span class="publication-date">
                     {{substr ($page.Params.date.Format "2006-01-02") 0 4}}
                 </span>
-
             </div>
 
             {{ $links := $page.Params.links }}
@@ -53,14 +47,9 @@
                 {{end}}
             </div>
             {{end}}
-
-
-
         </div>
-
-        {{end}}
-
-    </div>
+    {{end}}
+    <hr>
     {{end}}
 </div>
 {{end}}
